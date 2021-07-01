@@ -6,20 +6,20 @@
 /*   By: fportalo <fportalo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/01 13:29:56 by fportalo          #+#    #+#             */
-/*   Updated: 2021/07/01 13:49:10 by fportalo         ###   ########.fr       */
+/*   Updated: 2021/07/01 14:29:59 by fportalo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int ft_strlen(const char *str)
+int	ft_strlen(const char *str)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while(str[i])
-        i++;
-    return(i);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

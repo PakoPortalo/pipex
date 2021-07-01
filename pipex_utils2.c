@@ -6,7 +6,7 @@
 /*   By: fportalo <fportalo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/01 13:42:54 by fportalo          #+#    #+#             */
-/*   Updated: 2021/07/01 13:44:41 by fportalo         ###   ########.fr       */
+/*   Updated: 2021/07/01 14:29:09 by fportalo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-int		ft_freearray(char **array)
+int	ft_freearray(char **array)
 {
 	int	i;
 
