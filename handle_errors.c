@@ -6,7 +6,7 @@
 /*   By: fportalo <fportalo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/01 12:45:34 by fportalo          #+#    #+#             */
-/*   Updated: 2021/07/01 14:28:20 by fportalo         ###   ########.fr       */
+/*   Updated: 2021/07/02 14:13:32 by fportalo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	number_arguments(int argc)
 {
 	if (argc != 5)
 	{
-		perror("Error bro: número de argumentos inválido.\n");
+		errno = EINVAL;
+		perror("Error bro");
 		exit(-1);
 	}
 }
@@ -25,22 +26,22 @@ void	correct_path(char *path)
 {
 	if (!path)
 	{
-		perror("Error bro: Path incorrecto");
+		perror("Error bro");
 		exit(-1);
 	}
 }
 
 void	open_file(int fd)
 {
-	if (!fd)
+	if (fd < 0)
 	{
-		perror("Error bro: Archivo no abierto");
+		perror("Error bro");
 		exit (-1);
 	}
 }
 
 void	bad_pid(void)
 {
-	perror("Error bro: Hijo no encontrado");
+	perror("Error bro");
 	exit(-1);
 }
